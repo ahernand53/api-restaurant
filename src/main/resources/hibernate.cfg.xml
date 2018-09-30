@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/restaurante_spring</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <mapping class="com.ahernand53.restaurant.entity.ChefHeadEntity"/>
+    <mapping class="com.ahernand53.restaurant.entity.ClientEntity"/>
+    <mapping class="com.ahernand53.restaurant.entity.PlateEntity"/>
+    <mapping class="com.ahernand53.restaurant.entity.ReservationEntity"/>
+    <mapping class="com.ahernand53.restaurant.entity.TableEntity"/>
+    <mapping class="com.ahernand53.restaurant.entity.TypeEntity"/>
+    <mapping class="com.ahernand53.restaurant.entity.WarehouseEntity"/>
+    <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
